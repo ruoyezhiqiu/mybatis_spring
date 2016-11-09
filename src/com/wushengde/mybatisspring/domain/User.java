@@ -11,6 +11,7 @@ import java.util.Date;
 	user_salary DOUBLE
 )
  */
+//定义数据库的实体类：User
 public class User {
 	private int id;
 	private String name;

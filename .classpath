@@ -17,5 +17,6 @@
 	<classpathentry kind="lib" path="lib/spring-jdbc-4.0.0.M2.jar" sourcepath="E:/学习资料/视频资料/Javaweb/尚硅谷视频/尚硅谷javaweb视频/MyBatis/尚硅谷MyBatis视频教程/尚硅谷_myBatis_课件&amp;jar包/lib/spring-framework-master_src.zip"/>
 	<classpathentry kind="lib" path="lib/spring-test-4.0.0.M2.jar"/>
 	<classpathentry kind="lib" path="lib/spring-tx-4.0.0.M2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

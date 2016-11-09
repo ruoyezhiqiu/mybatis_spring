@@ -2,10 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- 
-	namespace:	必须与对应的接口全类名一致
+	namespace:	必须与对应的接口全类名一致,(*注:区分大小写)
 	id:      	必须与对应接口的某个方法名一致
+	注*:查询功能时注意实体类属性名与数据库字段名不一致的解决方式:此处使用别名的方法解决
  -->
-<mapper namespace="com.wushengde.mybatisspring.mapper.userMapper">
+<mapper namespace="com.wushengde.mybatisspring.mapper.UserMapper">
 	<insert id="save" parameterType="User">
 		insert into s_user(user_name,user_birthday,user_salary) values(#{name},#{birthday},#{salary})
 	</insert>
@@ -18,7 +19,7 @@
 	<select id="findById" parameterType="int" resultType="User">
 		select user_id id, user_name name,user_birthday birthday,user_salary salary from s_user where user_id=#{id}
 	</select>
-	<select id="findAll" resultType="User">
-		select user_id,user_name,user_birthday,user_salary from s_user
+	<select id="findAll" resultType="User" >
+		select user_id id ,user_name name,user_birthday birthday,user_salary salary from s_user
 	</select>
 </mapper>
